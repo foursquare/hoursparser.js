@@ -1,20 +1,7 @@
 // Copyright 2014 Foursquare Labs Inc. All Rights Reserved.
 
 var fourSq = fourSq || {};
-
-fourSq.namespace = fourSq.namespace || function(input) {
-  var ns = input.split(".");
-  var last = fourSq;
-  for (var i = 1; i < ns.length; i++) {
-    var part = ns[i];
-    if (!last[part]) {
-      last[part] = {};
-    }
-    last = last[part];
-  }
-};
-
-fourSq.namespace('fourSq.util');
+fourSq.util = fourSq.util || {}
 
 fourSq.util.Hours = {
   /**
