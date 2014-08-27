@@ -5,7 +5,7 @@ dumb but useful hours extractor from free-text entry
 
 demo @ http://foursquare.github.io/hoursparser.js/
 
-some examples the inputs and outputs:
+some examples of the inputs and outputs:
 
     ([{
       input: 'm-w 10:15am-2am; fri 12pm-11pm;',
