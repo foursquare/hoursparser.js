@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+    <script src="HoursParser.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    enter hours:<br/>
+    <textarea id="input" rows="20" cols="60">4am-5pm m-f</textarea>
+    <p/>
+    parsed output:
+    <div id="output"/>
+  </body>
+  <script>
+    var input = $('#input');
+    var output = $('#output');
+
+    function parseHours() {
+      var hours = fourSq.util.HoursParser.parse(input.val())
+      output.text(JSON.stringify(hours))
+    };
+
+    input.on('change keyup paste', parseHours);
+    parseHours();
+  </script>
+</html>
